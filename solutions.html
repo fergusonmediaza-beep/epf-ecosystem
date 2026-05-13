@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en" class="html-root">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Solutions | EPF Ecosystem</title>
+  <meta name="description" content="Enterprise-grade AI and ICT solutions built by Africans for Africa — covering financial governance, smart infrastructure, fintech, and capacity building." />
+  <meta name="keywords" content="EPF solutions, PULSE Check, PayPoint, Smart-View Technology, Orcaa.ai, Visiosoft, Africa AI solutions, financial governance, smart infrastructure" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Barlow+Condensed:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/epf-global.css" />
+  <link rel="stylesheet" href="assets/css/navbar.css" />
+  <link rel="stylesheet" href="assets/css/sidebar.css" />
+  <link rel="stylesheet" href="assets/css/loader.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+  <link rel="stylesheet" href="assets/css/solutions.css" />
+</head>
+
+<body class="body-root">
+
+  <!-- ══════════════════════════════════════════
+       LOADING SCREEN
+  ══════════════════════════════════════════ -->
+  <div id="epf-loader" class="epf-loader">
+    <div class="eco-loader">
+      <div class="eco-burst"></div>
+      <div class="eco-ring eco-ring-3"></div>
+      <div class="eco-ring eco-ring-2"></div>
+      <div class="eco-ring eco-ring-1"></div>
+      <div class="eco-core"></div>
+    </div>
+    <div class="loader-brand">
+      EPF <span class="loader-brand-accent">Ecosystem</span>
+    </div>
+    <div class="loader-bar">
+      <div class="loader-bar-fill"></div>
+    </div>
+    <div class="loader-label">Loading Solutions</div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════ -->
+  <header class="epf-nav" id="epf-nav" role="banner">
+    <div class="nav-inner">
+
+      <a href="index.html" class="nav-logo" aria-label="EPF Ecosystem Home">
+        <img src="assets/images/logo-black.webp" alt="EPF Ecosystem Logo" class="nav-logo-img" width="40" height="40" />
+        <div class="logo-text-wrap">
+          <span class="logo-name">EPF Ecosystem</span>
+          <span class="logo-sub">Youth &middot; Tech &middot; Entrepreneurship</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html"     class="nav-link" data-page="index">Home</a>
+        <a href="about.html"     class="nav-link" data-page="about">About</a>
+        <a href="why-epf.html"   class="nav-link" data-page="why-epf">Why EPF</a>
+        <a href="solutions.html" class="nav-link" data-page="solutions">Solutions</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="contact.html#contact-form" class="btn btn-teal nav-cta">
+          Partner With Us <i class="fa-solid fa-arrow-right btn-icon"></i>
+        </a>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span class="nav-hamburger-bar"></span>
+          <span class="nav-hamburger-bar"></span>
+          <span class="nav-hamburger-bar"></span>
+        </button>
+      </div>
+
+    </div>
+
+    <div class="nav-mobile" id="nav-mobile" aria-hidden="true">
+            <nav class="mobile-links" aria-label="Mobile navigation">
+        <a href="index.html" class="mob-link" data-page="index">
+          <i class="fa-solid fa-house mob-link-icon"></i>Home
+        </a>
+        <a href="about.html" class="mob-link" data-page="about">
+          <i class="fa-solid fa-circle-info mob-link-icon"></i>About
+        </a>
+        <a href="why-epf.html" class="mob-link" data-page="why-epf">
+          <i class="fa-solid fa-chart-bar mob-link-icon"></i>Why EPF
+        </a>
+        <a href="solutions.html" class="mob-link" data-page="solutions">
+          <i class="fa-solid fa-microchip mob-link-icon"></i>Solutions
+        </a>
+        <a href="contact.html" class="mob-link mob-link-cta">
+          <i class="fa-solid fa-envelope mob-link-icon"></i>Contact Us
+        </a>
+      </nav>
+      <div class="mob-footer-info">
+        <span>+27-11-084-1100</span>
+        <span>info@epfecosystem.org</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════
+       SIDEBAR
+  ══════════════════════════════════════════ -->
+  <aside class="epf-sidebar" id="epf-sidebar" aria-label="Site sidebar">
+    <button class="sb-close-btn" id="sb-close" aria-label="Close sidebar">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <div class="sb-section">
+      <div class="sb-section-label">Navigation</div>
+            <nav class="sb-nav-list" aria-label="Sidebar navigation">
+        <a href="index.html" class="sb-link" data-page="index">
+          <i class="fa-solid fa-house sb-link-icon"></i>
+          <span class="sb-link-text">Home</span>
+        </a>
+        <a href="about.html" class="sb-link" data-page="about">
+          <i class="fa-solid fa-circle-info sb-link-icon"></i>
+          <span class="sb-link-text">About EPF</span>
+        </a>
+        <a href="why-epf.html" class="sb-link" data-page="why-epf">
+          <i class="fa-solid fa-chart-bar sb-link-icon"></i>
+          <span class="sb-link-text">Why EPF</span>
+        </a>
+        <a href="solutions.html" class="sb-link" data-page="solutions">
+          <i class="fa-solid fa-microchip sb-link-icon"></i>
+          <span class="sb-link-text">Solutions</span>
+        </a>
+      </nav>
+    </div>
+
+    <div class="sb-section">
+      <div class="sb-section-label">Our Entities</div>
+      <nav class="sb-nav-list" aria-label="Entity links">
+        <a href="https://www.empirepartnerfoundation.org/" target="_blank" rel="noopener" class="sb-link">
+          <i class="fa-solid fa-lightbulb sb-link-icon"></i>
+          <span class="sb-link-text">EPF Foundation</span>
+          <i class="fa-solid fa-arrow-up-right-from-square sb-link-ext-icon"></i>
+        </a>
+        <a href="https://www.aicampus.co.za/" target="_blank" rel="noopener" class="sb-link">
+          <i class="fa-solid fa-graduation-cap sb-link-icon"></i>
+          <span class="sb-link-text">AI Campus</span>
+          <i class="fa-solid fa-arrow-up-right-from-square sb-link-ext-icon"></i>
+        </a>
+        <a href="https://epftechfund.org/" target="_blank" rel="noopener" class="sb-link">
+          <i class="fa-solid fa-chart-pie sb-link-icon"></i>
+          <span class="sb-link-text">EPF Tech Fund</span>
+          <i class="fa-solid fa-arrow-up-right-from-square sb-link-ext-icon"></i>
+        </a>
+        <a href="https://www.epfssif.co.za/" target="_blank" rel="noopener" class="sb-link">
+          <i class="fa-solid fa-scale-balanced sb-link-icon"></i>
+          <span class="sb-link-text">EPF SSIF</span>
+          <i class="fa-solid fa-arrow-up-right-from-square sb-link-ext-icon"></i>
+        </a>
+      </nav>
+    </div>
+
+    <div class="sb-section">
+      <div class="sb-section-label">Impact Snapshot</div>
+      <div class="sb-metrics">
+        <div class="sb-metric">
+          <div class="sb-metric-number c-teal">R300M+</div>
+          <div class="sb-metric-label">Funding</div>
+        </div>
+        <div class="sb-metric">
+          <div class="sb-metric-number c-coral">14K+</div>
+          <div class="sb-metric-label">Youth Trained</div>
+        </div>
+        <div class="sb-metric">
+          <div class="sb-metric-number c-orange">30+</div>
+          <div class="sb-metric-label">Countries</div>
+        </div>
+        <div class="sb-metric">
+          <div class="sb-metric-number c-teal">5,000+</div>
+          <div class="sb-metric-label">Jobs</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sb-cta-box">
+      <p class="sb-cta-text">Ready to invest in Africa's future?</p>
+      <a href="contact.html" class="btn btn-teal">
+        Become a Partner <i class="fa-solid fa-arrow-right btn-icon"></i>
+      </a>
+    </div>
+  </aside>
+
+  <div class="sb-overlay" id="sb-overlay"></div>
+
+  <button class="sb-fab" id="sb-fab" aria-label="Open sidebar">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+
+  <!-- ══════════════════════════════════════════
+       PAGE CONTENT
+  ══════════════════════════════════════════ -->
+  <div class="page-wrap">
+    <main id="main">
+
+      <!-- ── PAGE HERO ── -->
+      <section class="page-hero" aria-label="Solutions">
+        <div class="page-hero-bg">
+          <img src="assets/images/solutions-hero.webp" alt="EPF Solutions" class="page-hero-bg-img" />
+        </div>
+        <div class="wrap">
+          <div class="page-hero-inner">
+            <div class="page-hero-tag">
+              <i class="fa-solid fa-circle-dot page-hero-tag-dot"></i>
+              The Arsenal
+            </div>
+            <h1 class="page-hero-title">
+              Enterprise-Grade
+              <span class="page-hero-title-accent">AI Solutions</span>
+            </h1>
+            <p class="page-hero-desc">
+              Proven, deployment-ready proprietary software solving Africa's most critical
+              public sector and corporate bottlenecks. Every solution is PMO-deployed and
+              VSI-verified from day one.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── CHALLENGE FILTER NAV ── -->
+      <div class="challenge-nav" role="navigation" aria-label="Filter by challenge">
+        <div class="wrap">
+          <div class="challenge-nav-header">
+            <span class="challenge-nav-label">10 Public Sector Challenges. Built-for-Africa Solutions.</span>
+          </div>
+          <div class="challenge-nav-grid">
+
+            <button class="challenge-tile challenge-tile-active" data-filter="all" aria-label="All solutions">
+              <div class="challenge-tile-icon"><i class="fa-solid fa-border-all"></i></div>
+              <span class="challenge-tile-label">All</span>
+            </button>
+            <button class="challenge-tile" data-filter="infrastructure" aria-label="Water solutions">
+              <div class="challenge-tile-icon"><i class="fa-solid fa-droplet"></i></div>
+              <span class="challenge-tile-label">Water</span>
+            </button>
+            <button class="challenge-tile" data-filter="infrastructure" aria-label="Energy solutions">
+              <div class="challenge-tile-icon"><i class="fa-solid fa-bolt"></i></div>
+              <span class="challenge-tile-label">Energy</span>
+            </button>
+            <button class="challenge-tile" data-filter="infrastructure" aria-label="Housing solutions">
+              <div class="challenge-tile-icon"><i class="fa-solid fa-house"></i></div>
+              <span class="challenge-tile-label">Housing</span>
+            </button>
+            <button class="challenge-tile" data-filter="infrastructure" aria-label="Rural Development solutions">
+              <div class="challenge-tile-icon"><i class="fa-solid fa-tractor"></i></div>
+              <span class="challenge-tile-label">Rural Dev</span>
+            </button>
+            <button class="challenge-tile" data-filter="governance" aria-label="Safety solutions">
+              <div class="challenge-tile-icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <span class="challenge-tile-label">Safety</span>
+            </button>
+            <button class="challenge-tile" data-filter="capacity" aria-label="Education solutions">
+              <div class="challenge-tile-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <span class="challenge-tile-label">Education</span>
+            </button>
+            <button class="challenge-tile" data-filter="capacity" aria-label="Healthcare solutions">
+              <div class="challenge-tile-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+              <span class="challenge-tile-label">Healthcare</span>
+            </button>
+            <button class="challenge-tile" data-filter="fintech" aria-label="Unemployment solutions">
+              <div class="challenge-tile-icon"><i class="fa-solid fa-briefcase"></i></div>
+              <span class="challenge-tile-label">Unemployment</span>
+            </button>
+            <button class="challenge-tile" data-filter="fintech" aria-label="Agriculture solutions">
+              <div class="challenge-tile-icon"><i class="fa-solid fa-wheat-awn"></i></div>
+              <span class="challenge-tile-label">Agriculture</span>
+            </button>
+            <button class="challenge-tile" data-filter="infrastructure" aria-label="Transport solutions">
+              <div class="challenge-tile-icon"><i class="fa-solid fa-bus"></i></div>
+              <span class="challenge-tile-label">Transport</span>
+            </button>
+
+          </div>
+
+          <!-- Mobile dropdown -->
+          <div class="filter-mobile">
+            <select class="filter-select" id="filter-select" aria-label="Filter solutions">
+              <option value="all">All Solutions</option>
+              <option value="governance">Governance &amp; Safety</option>
+              <option value="infrastructure">Utilities &amp; Infrastructure</option>
+              <option value="fintech">Fintech &amp; Economic Inclusion</option>
+              <option value="capacity">Education &amp; Healthcare</option>
+            </select>
+            <i class="fa-solid fa-chevron-down filter-select-icon"></i>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ── SOLUTIONS GRID ── -->
+      <section class="solutions-section section" id="all-solutions" aria-label="Solutions Portfolio">
+        <div class="wrap">
+          <div class="solutions-header">
+            <div class="lbl rv">
+              <i class="fa-solid fa-circle lbl-icon"></i>Enterprise Portfolios
+            </div>
+            <h2 class="h-display rv">
+              Proprietary AI Solutions <span class="c-teal">Built for Enterprise</span>
+            </h2>
+            <p class="solutions-header-desc rv">
+              Each solution targets a specific public sector or corporate bottleneck, is deployed
+              through the Trust Us PMO, and tracked in real time through the VSI platform.
+              These are not pilot programmes — they are live, revenue-generating enterprise deployments.
+            </p>
+          </div>
+
+          <div class="solutions-grid">
+
+            <!-- FINANCIAL GOVERNANCE -->
+            <article class="sol-card show" data-cat="governance" id="governance">
+              <div class="sol-card-img-wrap">
+                <img src="assets/images/solutions/pulse-check.webp" alt="PULSE Check Verify" class="sol-card-img" />
+                <span class="sol-card-badge sol-badge-teal">Governance</span>
+                <div class="sol-card-roi">
+                  <i class="fa-solid fa-circle-check sol-card-roi-icon"></i>ROI: Instantly halts revenue leakage by stopping fraudulent municipal claims
+                </div>
+              </div>
+              <div class="sol-card-body">
+                <div class="sol-card-category sol-cat-teal">Governance</div>
+                <h3 class="sol-card-title">PULSE Check (Verify)</h3>
+                <p class="sol-card-desc">A digital onboarding and vetting platform that verifies supplier and employee information to combat municipal and corporate fraud in real time.</p>
+                <div class="sol-card-tags">
+                  <span class="sol-tag">Fraud Prevention</span>
+                  <span class="sol-tag">Supplier Vetting</span>
+                  <span class="sol-tag">Municipal</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="sol-card show" data-cat="governance">
+              <div class="sol-card-img-wrap">
+                <img src="assets/images/solutions/proba-analytics.webp" alt="Proba Analytics" class="sol-card-img" />
+                <span class="sol-card-badge sol-badge-teal">Governance</span>
+              </div>
+              <div class="sol-card-body">
+                <div class="sol-card-category sol-cat-teal">Governance</div>
+                <h3 class="sol-card-title">Proba Analytics</h3>
+                <p class="sol-card-desc">An AI-driven platform that revolutionises big data analysis, identifying patterns and offering insightful recommendations for financial governance and compliance.</p>
+                <div class="sol-card-tags">
+                  <span class="sol-tag">AI Analytics</span>
+                  <span class="sol-tag">Big Data</span>
+                  <span class="sol-tag">Governance</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="sol-card show" data-cat="governance">
+              <div class="sol-card-img-wrap">
+                <img src="assets/images/solutions/x-verdict.webp" alt="X-VERDICT" class="sol-card-img" />
+                <span class="sol-card-badge sol-badge-teal">Governance</span>
+                <div class="sol-card-roi">
+                  <i class="fa-solid fa-circle-check sol-card-roi-icon"></i>ROI: Eliminates compliance backlogs and mitigates municipal legal risk
+                </div>
+              </div>
+              <div class="sol-card-body">
+                <div class="sol-card-category sol-cat-teal">Governance</div>
+                <h3 class="sol-card-title">X-VERDICT</h3>
+                <p class="sol-card-desc">AI-powered legal case management and compliance tracking platform ensuring judicial transparency across municipalities and corporate entities.</p>
+                <div class="sol-card-tags">
+                  <span class="sol-tag">Legal AI</span>
+                  <span class="sol-tag">Compliance</span>
+                  <span class="sol-tag">Case Management</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- SMART INFRASTRUCTURE -->
+            <article class="sol-card show" data-cat="infrastructure" id="infrastructure">
+              <div class="sol-card-img-wrap">
+                <img src="assets/images/solutions/smartview.webp" alt="Smart-View Technology" class="sol-card-img" />
+                <span class="sol-card-badge sol-badge-orange">Utilities</span>
+                <div class="sol-card-roi">
+                  <i class="fa-solid fa-circle-check sol-card-roi-icon"></i>ROI: Protects critical infrastructure and directly reduces Non-Revenue Water losses
+                </div>
+              </div>
+              <div class="sol-card-body">
+                <div class="sol-card-category sol-cat-orange">Utilities</div>
+                <h3 class="sol-card-title">Smart-View Technology</h3>
+                <p class="sol-card-desc">Enterprise-grade utility management platform that reduces wastewater and improves energy efficiency through early anomaly detection and IoT monitoring.</p>
+                <div class="sol-card-tags">
+                  <span class="sol-tag">IoT</span>
+                  <span class="sol-tag">Utility Management</span>
+                  <span class="sol-tag">Water</span>
+                  <span class="sol-tag">Energy</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="sol-card show" data-cat="infrastructure">
+              <div class="sol-card-img-wrap">
+                <img src="assets/images/solutions/visiosoft.webp" alt="Visiosoft" class="sol-card-img" />
+                <span class="sol-card-badge sol-badge-orange">Utilities</span>
+              </div>
+              <div class="sol-card-body">
+                <div class="sol-card-category sol-cat-orange">Utilities</div>
+                <h3 class="sol-card-title">Visiosoft</h3>
+                <p class="sol-card-desc">Produces IoT and communication hardware including sensors for smart utilities, asset tracking, and environmental monitoring across municipal and industrial environments.</p>
+                <div class="sol-card-tags">
+                  <span class="sol-tag">IoT Hardware</span>
+                  <span class="sol-tag">Sensors</span>
+                  <span class="sol-tag">Monitoring</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="sol-card show" data-cat="infrastructure">
+              <div class="sol-card-img-wrap">
+                <img src="assets/images/solutions/afritec.webp" alt="Afri-tec" class="sol-card-img" />
+                <span class="sol-card-badge sol-badge-orange">Utilities</span>
+                <div class="sol-card-roi">
+                  <i class="fa-solid fa-circle-check sol-card-roi-icon"></i>ROI: Reduces GBV-F emergency response times through AI-powered real-time alerts
+                </div>
+              </div>
+              <div class="sol-card-body">
+                <div class="sol-card-category sol-cat-orange">Utilities</div>
+                <h3 class="sol-card-title">Afri-tec</h3>
+                <p class="sol-card-desc">An AI-powered community safety platform. The flagship Afri-tec SOS Alert mobile app enables fast, discreet emergency communication to combat gender-based violence and improve public safety.</p>
+                <div class="sol-card-tags">
+                  <span class="sol-tag">Public Safety</span>
+                  <span class="sol-tag">AI</span>
+                  <span class="sol-tag">GBV Prevention</span>
+                  <span class="sol-tag">Mobile</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="sol-card show" data-cat="fintech">
+              <div class="sol-card-img-wrap">
+                <img src="assets/images/solutions/retec.webp" alt="RE-TEC Solutions" class="sol-card-img" />
+                <span class="sol-card-badge sol-badge-teal">Fintech</span>
+              </div>
+              <div class="sol-card-body">
+                <div class="sol-card-category sol-cat-teal">Fintech</div>
+                <h3 class="sol-card-title">RE-TEC Solutions</h3>
+                <p class="sol-card-desc">A digital property management platform offering tenant engagement, smart facilities management, and behaviour analytics for affordable housing and commercial property portfolios.</p>
+                <div class="sol-card-tags">
+                  <span class="sol-tag">Property Management</span>
+                  <span class="sol-tag">Housing</span>
+                  <span class="sol-tag">Smart Facilities</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- CAPACITY BUILDING -->
+            <article class="sol-card show" data-cat="capacity" id="capacity">
+              <div class="sol-card-img-wrap">
+                <img src="assets/images/solutions/orcaa.webp" alt="Orcaa.ai" class="sol-card-img" />
+                <span class="sol-card-badge sol-badge-coral">Capacity Building</span>
+              </div>
+              <div class="sol-card-body">
+                <div class="sol-card-category sol-cat-coral">Capacity Building</div>
+                <h3 class="sol-card-title">Orcaa.ai</h3>
+                <p class="sol-card-desc">A learner evaluation platform that uses AI-driven assessments to track progress, identify skills gaps, and align graduate capabilities with real industry needs.</p>
+                <div class="sol-card-tags">
+                  <span class="sol-tag">AI Assessment</span>
+                  <span class="sol-tag">Skills Development</span>
+                  <span class="sol-tag">Education</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="sol-card show" data-cat="capacity">
+              <div class="sol-card-img-wrap">
+                <img src="assets/images/solutions/digital-resolve.webp" alt="Digital Resolve" class="sol-card-img" />
+                <span class="sol-card-badge sol-badge-coral">Capacity Building</span>
+              </div>
+              <div class="sol-card-body">
+                <div class="sol-card-category sol-cat-coral">Capacity Building</div>
+                <h3 class="sol-card-title">Digital Resolve</h3>
+                <p class="sol-card-desc">A marketing agency solving youth unemployment through design thinking and technology solutions — turning creative talent into sustainable digital careers.</p>
+                <div class="sol-card-tags">
+                  <span class="sol-tag">Youth Employment</span>
+                  <span class="sol-tag">Design Thinking</span>
+                  <span class="sol-tag">Digital Marketing</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- FINTECH -->
+            <article class="sol-card show" data-cat="fintech" id="fintech">
+              <div class="sol-card-img-wrap">
+                <img src="assets/images/solutions/paypoint.webp" alt="PayPoint" class="sol-card-img" />
+                <span class="sol-card-badge sol-badge-teal">Fintech</span>
+                <div class="sol-card-roi">
+                  <i class="fa-solid fa-circle-check sol-card-roi-icon"></i>ROI: Sovereign-grade payment rails enabling automated revenue collection at scale
+                </div>
+              </div>
+              <div class="sol-card-body">
+                <div class="sol-card-category sol-cat-teal">Fintech</div>
+                <h3 class="sol-card-title">PayPoint</h3>
+                <p class="sol-card-desc">A sovereign-grade transaction gateway providing the payment rails for the ecosystem — enabling secure, automated revenue collection for utilities and large-scale government grant disbursements.</p>
+                <div class="sol-card-tags">
+                  <span class="sol-tag">Payment Gateway</span>
+                  <span class="sol-tag">Government Grants</span>
+                  <span class="sol-tag">Utility Billing</span>
+                  <span class="sol-tag">Sovereign-grade</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- TDM -->
+            <article class="sol-card show" data-cat="fintech">
+              <div class="sol-card-img-wrap">
+                <div class="img-ph" style="height:200px;">
+                  <i class="fa-solid fa-chart-network img-ph-icon"></i>
+                  <span>TDM</span>
+                </div>
+                <span class="sol-card-badge sol-badge-teal">Fintech</span>
+                <div class="sol-card-roi"><i class="fa-solid fa-arrow-trend-up sol-card-roi-icon"></i>Micro-enterprise &amp; Economic Inclusion</div>
+              </div>
+              <div class="sol-card-body">
+                <div class="sol-card-category sol-cat-teal">Economic Inclusion</div>
+                <h3 class="sol-card-title">TDM</h3>
+                <p class="sol-card-desc">Technology-driven micro-enterprise development platform — creating sustainable economic pathways for township and rural entrepreneurs through digital tools and market access.</p>
+                <div class="sol-card-tags">
+                  <span class="sol-tag">Micro-enterprise</span>
+                  <span class="sol-tag">Township Economy</span>
+                  <span class="sol-tag">Economic Inclusion</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Skills Development -->
+            <article class="sol-card show" data-cat="capacity">
+              <div class="sol-card-img-wrap">
+                <div class="img-ph" style="height:200px;">
+                  <i class="fa-solid fa-people-group img-ph-icon"></i>
+                  <span>Skills Development</span>
+                </div>
+                <span class="sol-card-badge sol-badge-coral">Capacity Building</span>
+                <div class="sol-card-roi"><i class="fa-solid fa-arrow-trend-up sol-card-roi-icon"></i>14,000+ Youth Trained</div>
+              </div>
+              <div class="sol-card-body">
+                <div class="sol-card-category sol-cat-coral">Capacity Building</div>
+                <h3 class="sol-card-title">Skills Development</h3>
+                <p class="sol-card-desc">Structured ICT and digital skills programmes delivered across South Africa — closing the gap between unemployed youth and the demands of a 4IR economy through accredited training.</p>
+                <div class="sol-card-tags">
+                  <span class="sol-tag">ICT Training</span>
+                  <span class="sol-tag">Digital Skills</span>
+                  <span class="sol-tag">MICT SETA</span>
+                  <span class="sol-tag">4IR Ready</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- AI Academy -->
+            <article class="sol-card show" data-cat="capacity">
+              <div class="sol-card-img-wrap">
+                <div class="img-ph" style="height:200px;">
+                  <i class="fa-solid fa-robot img-ph-icon"></i>
+                  <span>AI Academy</span>
+                </div>
+                <span class="sol-card-badge sol-badge-coral">Capacity Building</span>
+                <div class="sol-card-roi"><i class="fa-solid fa-arrow-trend-up sol-card-roi-icon"></i>100% Graduate Placement</div>
+              </div>
+              <div class="sol-card-body">
+                <div class="sol-card-category sol-cat-coral">Capacity Building</div>
+                <h3 class="sol-card-title">AI Academy</h3>
+                <p class="sol-card-desc">An intensive AI and software engineering programme that takes unemployed graduates to job-ready developers in 6 months — with a 100% placement rate across multiple cohorts.</p>
+                <div class="sol-card-tags">
+                  <span class="sol-tag">AI Engineering</span>
+                  <span class="sol-tag">Software Development</span>
+                  <span class="sol-tag">6-month Programme</span>
+                  <span class="sol-tag">100% Placement</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Coding in Rural Schools -->
+            <article class="sol-card show" data-cat="capacity">
+              <div class="sol-card-img-wrap">
+                <div class="img-ph" style="height:200px;">
+                  <i class="fa-solid fa-school img-ph-icon"></i>
+                  <span>Coding in Rural Schools</span>
+                </div>
+                <span class="sol-card-badge sol-badge-coral">Capacity Building</span>
+                <div class="sol-card-roi"><i class="fa-solid fa-arrow-trend-up sol-card-roi-icon"></i>Rural Digital Access</div>
+              </div>
+              <div class="sol-card-body">
+                <div class="sol-card-category sol-cat-coral">Capacity Building</div>
+                <h3 class="sol-card-title">Coding in Rural Schools</h3>
+                <p class="sol-card-desc">Bringing structured coding and computational thinking curricula to rural schools — planting the seeds of Africa's next generation of developers before they reach university.</p>
+                <div class="sol-card-tags">
+                  <span class="sol-tag">Rural Education</span>
+                  <span class="sol-tag">Coding Curriculum</span>
+                  <span class="sol-tag">Digital Inclusion</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ── FEATURED SOLUTION: PAYPOINT ── -->
+      <section class="featured-section" id="featured" aria-label="Featured Solution">
+        <div class="wrap">
+          <div class="featured-grid">
+
+            <div class="rv">
+              <div class="featured-img-wrap">
+                <img src="assets/images/solutions/paypoint-feature.webp" alt="PayPoint Platform" class="featured-img" />
+              </div>
+            </div>
+
+            <div class="featured-right rv">
+              <div class="featured-badge">
+                <i class="fa-solid fa-star featured-badge-icon"></i>Featured Solution
+              </div>
+              <h2 class="featured-title">
+                PayPoint <span class="c-teal">Payment Infrastructure</span>
+              </h2>
+              <p class="featured-desc">
+                The sovereign-grade transaction backbone of the EPF Ecosystem. PayPoint processes
+                millions of rands in utility payments and government grant disbursements with
+                enterprise security and real-time reconciliation.
+              </p>
+              <div class="featured-features">
+                <div class="featured-feature">
+                  <div class="featured-feature-icon">
+                    <i class="fa-solid fa-shield-halved featured-feature-glyph"></i>
+                  </div>
+                  <div class="featured-feature-content">
+                    <div class="featured-feature-title">Sovereign-grade Security</div>
+                    <div class="featured-feature-desc">Bank-level encryption and compliance frameworks protecting every transaction.</div>
+                  </div>
+                </div>
+                <div class="featured-feature">
+                  <div class="featured-feature-icon">
+                    <i class="fa-solid fa-bolt featured-feature-glyph"></i>
+                  </div>
+                  <div class="featured-feature-content">
+                    <div class="featured-feature-title">Real-time Reconciliation</div>
+                    <div class="featured-feature-desc">Every transaction reconciled instantly and logged in the VSI platform for audit-readiness.</div>
+                  </div>
+                </div>
+                <div class="featured-feature">
+                  <div class="featured-feature-icon">
+                    <i class="fa-solid fa-building-columns featured-feature-glyph"></i>
+                  </div>
+                  <div class="featured-feature-content">
+                    <div class="featured-feature-title">Government Grant Disbursement</div>
+                    <div class="featured-feature-desc">Deployed for large-scale government grant programmes across South Africa.</div>
+                  </div>
+                </div>
+                <div class="featured-feature">
+                  <div class="featured-feature-icon">
+                    <i class="fa-solid fa-water featured-feature-glyph"></i>
+                  </div>
+                  <div class="featured-feature-content">
+                    <div class="featured-feature-title">Utility Revenue Collection</div>
+                    <div class="featured-feature-desc">Automated billing and payment collection for water and electricity municipalities.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="featured-note">
+                PayPoint is currently deployed across <span class="featured-note-strong">multiple municipalities</span>
+                and processes government grant disbursements for beneficiaries across South Africa.
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ── PROPRIETARY PLATFORMS ── -->
+      <section class="platforms-section section" id="platforms" aria-label="Proprietary Platforms">
+        <div class="wrap">
+          <div class="platforms-header">
+            <div class="lbl rv">
+              <i class="fa-solid fa-circle lbl-icon"></i>Proprietary Platforms
+            </div>
+            <h2 class="h-display rv">
+              Technology Built <span class="c-teal">For the Ecosystem</span>
+            </h2>
+            <p class="platforms-header-desc rv">
+              Two proprietary platforms power the transparency and storytelling layers of the entire ecosystem.
+            </p>
+          </div>
+
+          <div class="platforms-grid">
+
+            <div class="platform-card platform-card-teal rv">
+              <div class="platform-icon platform-icon-teal">
+                <i class="fa-solid fa-chart-line platform-icon-glyph"></i>
+              </div>
+              <div class="platform-label platform-label-teal">Transparency Platform</div>
+              <h3 class="platform-title">Visible Social Impact Platform (VSI)</h3>
+              <p class="platform-desc">
+                A platform ensuring accountability and transparency across all social initiatives.
+                The VSI is the Digital Nervous System of the EPF Ecosystem — tracking every cent,
+                every project, and every outcome in real time.
+              </p>
+              <div class="platform-features">
+                <div class="platform-feature">
+                  <i class="fa-solid fa-circle-check platform-feature-icon-teal"></i>
+                  <span>AI-driven data cleaning for accurate reporting</span>
+                </div>
+                <div class="platform-feature">
+                  <i class="fa-solid fa-circle-check platform-feature-icon-teal"></i>
+                  <span>Real-time KPI tracking across all portfolio companies</span>
+                </div>
+                <div class="platform-feature">
+                  <i class="fa-solid fa-circle-check platform-feature-icon-teal"></i>
+                  <span>Customisable dashboards for investors and government partners</span>
+                </div>
+                <div class="platform-feature">
+                  <i class="fa-solid fa-circle-check platform-feature-icon-teal"></i>
+                  <span>Audit-ready reporting for the Auditor-General at all times</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="platform-card platform-card-coral rv">
+              <div class="platform-icon platform-icon-coral">
+                <i class="fa-solid fa-film platform-icon-glyph"></i>
+              </div>
+              <div class="platform-label platform-label-coral">Media and Storytelling</div>
+              <h3 class="platform-title">Beyond the Bottom Line (EPF Production House)</h3>
+              <p class="platform-desc">
+                A media house fostering dialogue on socio-economic challenges through content creation.
+                The Production House generates storytelling that attracts further support, partners,
+                and awareness for the ecosystem.
+              </p>
+              <div class="platform-features">
+                <div class="platform-feature">
+                  <i class="fa-solid fa-circle-check platform-feature-icon-coral"></i>
+                  <span>EPF Tech Fund Talks podcast — investor and entrepreneur conversations</span>
+                </div>
+                <div class="platform-feature">
+                  <i class="fa-solid fa-circle-check platform-feature-icon-coral"></i>
+                  <span>Municipal Bill coverage — investigative content on public sector challenges</span>
+                </div>
+                <div class="platform-feature">
+                  <i class="fa-solid fa-circle-check platform-feature-icon-coral"></i>
+                  <span>Impact documentaries and social media content series</span>
+                </div>
+                <div class="platform-feature">
+                  <i class="fa-solid fa-circle-check platform-feature-icon-coral"></i>
+                  <span>Thought leadership articles and policy advocacy materials</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- ── CTA ── -->
+      <section class="cta-strip-section" id="cta" aria-label="Deploy a Solution">
+        <div class="wrap">
+          <div class="cta-strip-inner rv">
+            <div class="cta-strip-text">
+              <h2 class="cta-strip-heading">
+                Deploy a Solution <span class="c-teal">in Your Organisation</span>
+              </h2>
+              <p class="cta-strip-sub">
+                All EPF solutions are enterprise-ready, B-BBEE compliant, and deployed through the
+                Trust Us PMO with full VSI tracking. Get in touch to discuss your specific challenge.
+              </p>
+            </div>
+            <div class="cta-strip-actions">
+              <a href="contact.html"    class="btn btn-teal">
+                Request a Demo <i class="fa-solid fa-arrow-right btn-icon"></i>
+              </a>
+              <a href="why-epf.html" class="btn btn-coral">
+                Investment Case <i class="fa-solid fa-arrow-right btn-icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="epf-footer" role="contentinfo">
+    <div class="footer-main">
+      <div class="wrap">
+        <div class="footer-grid">
+
+          <div class="footer-brand">
+            <a href="index.html" class="footer-logo-link" aria-label="EPF Ecosystem Home">
+              <img src="assets/images/logo-white.webp" alt="EPF Ecosystem Logo" class="footer-logo-img" width="40" height="40" />
+              <div class="logo-text-wrap">
+                <span class="logo-name">EPF Ecosystem</span>
+                <span class="logo-sub">Youth &middot; Tech &middot; Entrepreneurship</span>
+              </div>
+            </a>
+            <p class="footer-tagline">
+              Engineering Africa's Digital Future. We convert public sector challenges into
+              scalable market opportunities through indigenous Pan-African AI.
+            </p>
+            <div class="footer-contact-list">
+              <a href="tel:+27110841100" class="footer-contact-item">
+                <i class="fa-solid fa-phone footer-contact-icon"></i>
+                +27-11-084-1100
+              </a>
+              <a href="mailto:info@epfecosystem.org" class="footer-contact-item">
+                <i class="fa-solid fa-envelope footer-contact-icon"></i>
+                info@epfecosystem.org
+              </a>
+              <a href="https://maps.google.com/?q=35+Ferguson+Road,+Illovo,+Sandton" target="_blank" rel="noopener" class="footer-contact-item">
+                <i class="fa-solid fa-location-dot footer-contact-icon"></i>
+                35 Ferguson Road, Illovo, Sandton
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-col-title">Navigate</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html"     class="footer-nav-item"><i class="fa-solid fa-chevron-right footer-nav-icon"></i>Home</a></li>
+            <li><a href="about.html"     class="footer-nav-item"><i class="fa-solid fa-chevron-right footer-nav-icon"></i>About EPF</a></li>
+            <li><a href="why-epf.html"   class="footer-nav-item"><i class="fa-solid fa-chevron-right footer-nav-icon"></i>Why EPF</a></li>
+            <li><a href="solutions.html" class="footer-nav-item"><i class="fa-solid fa-chevron-right footer-nav-icon"></i>Solutions</a></li>
+          </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-col-title">Our Entities</h4>
+            <ul class="footer-nav-list">
+              <li><a href="https://www.empirepartnerfoundation.org/" target="_blank" rel="noopener" class="footer-nav-item"><i class="fa-solid fa-chevron-right footer-nav-icon"></i>EPF Foundation</a></li>
+              <li><a href="https://www.aicampus.co.za/"              target="_blank" rel="noopener" class="footer-nav-item"><i class="fa-solid fa-chevron-right footer-nav-icon"></i>AI Campus</a></li>
+              <li><a href="https://epftechfund.org/"                 target="_blank" rel="noopener" class="footer-nav-item"><i class="fa-solid fa-chevron-right footer-nav-icon"></i>EPF Tech Fund</a></li>
+              <li><a href="https://www.epfssif.co.za/"              target="_blank" rel="noopener" class="footer-nav-item"><i class="fa-solid fa-chevron-right footer-nav-icon"></i>EPF SSIF</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-col-title">Get in Touch</h4>
+            <ul class="footer-nav-list">
+              <li><a href="contact.html" class="footer-nav-item"><i class="fa-solid fa-envelope footer-nav-icon"></i>Contact Us</a></li>
+              <li><a href="contact.html#contact-form" class="footer-nav-item"><i class="fa-solid fa-handshake footer-nav-icon"></i>Partner With Us</a></li>
+              <li><a href="mailto:invest@epfecosystem.org" class="footer-nav-item"><i class="fa-solid fa-money-bill-trend-up footer-nav-icon"></i>Investment Enquiries</a></li>
+              <li><a href="mailto:solutions@epfecosystem.org" class="footer-nav-item"><i class="fa-solid fa-microchip footer-nav-icon"></i>Solutions &amp; Procurement</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-partners">
+      <div class="wrap">
+        <div class="footer-partners-inner">
+          <span class="footer-partners-label">Trusted Partners</span>
+          <div class="footer-chips">
+            <span class="footer-chip">Microsoft</span>
+            <span class="footer-chip">Deloitte</span>
+            <span class="footer-chip">Vodacom</span>
+            <span class="footer-chip">MTN</span>
+            <span class="footer-chip">Standard Bank</span>
+            <span class="footer-chip">Bayer</span>
+            <span class="footer-chip">IFC</span>
+            <span class="footer-chip">SALGA</span>
+            <span class="footer-chip">British Council</span>
+            <span class="footer-chip">ProBono.Org</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="wrap">
+        <div class="footer-bottom-inner">
+          <div class="footer-bottom-left">
+            <span>&copy; <span id="footer-year">2026</span> EPF Ecosystem. All rights reserved.</span>
+            <span class="footer-bottom-sep">&bull;</span>
+            <span>Registered in South Africa</span>
+          </div>
+          <div class="footer-badges">
+            <div class="footer-badge">
+              <i class="fa-solid fa-circle-check footer-badge-icon"></i>Section 18A NPO
+            </div>
+            <div class="footer-badge">
+              <i class="fa-solid fa-circle-check footer-badge-icon"></i>B-BBEE Compliant
+            </div>
+            <div class="footer-badge">
+              <i class="fa-solid fa-circle-check footer-badge-icon"></i>Auditor-General Ready
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════
+       SCRIPTS — no scripts in <head>
+  ══════════════════════════════════════════ -->
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/footer.js"></script>
+  <script src="assets/js/solutions.js"></script>
+
+</body>
+</html>

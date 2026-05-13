@@ -1,0 +1,302 @@
+/* ============================================================
+   EPF ECOSYSTEM — GLOBAL STYLES
+   Import this first on every page
+   ============================================================ */
+
+/* ── TOKENS ── */
+:root {
+  /* Brand palette */
+  --teal:          #6CBEED;
+  --teal-dk:       #5aafde;
+  --teal-dim:      rgba(108, 190, 237, 0.10);
+  --teal-line:     rgba(108, 190, 237, 0.28);
+  --coral:         #e63946;
+  --coral-dim:     rgba(230, 57, 70, 0.10);
+  --coral-line:    rgba(230, 57, 70, 0.28);
+  --orange:        #f4a620;
+  --orange-dim:    rgba(244, 166, 32, 0.10);
+  --orange-line:   rgba(244, 166, 32, 0.28);
+
+  /* Backgrounds */
+  --bg-page:       #f5f7fa;
+  --bg-white:      #ffffff;
+  --bg-muted:      #edf0f5;
+  --bg-dark:       #0d1628;
+  --bg-dark-2:     #0a1020;
+  --bg-card:       #ffffff;
+
+  /* Text */
+  --tx-heading:    #0d1628;
+  --tx-body:       #374558;
+  --tx-muted:      #7a8fa8;
+  --tx-light:      #a8b8cc;
+  --tx-inv:        #ffffff;
+
+  /* Borders */
+  --bd:            rgba(0, 0, 0, 0.08);
+  --bd-dark:       rgba(255, 255, 255, 0.07);
+
+  /* Shadows */
+  --sh-sm:   0 1px 4px rgba(0, 0, 0, 0.06);
+  --sh-md:   0 4px 20px rgba(0, 0, 0, 0.08);
+  --sh-lg:   0 12px 40px rgba(0, 0, 0, 0.12);
+
+  /* Layout */
+  --nav-h:         68px;
+  --sidebar-w:     260px;
+  --max-w:         1440px;
+  --radius:        4px;
+  --radius-lg:     8px;
+
+  /* Fonts */
+  --fd:  'Barlow Condensed', sans-serif;
+  --fb:  'Barlow', sans-serif;
+}
+
+/* ── RESET ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.html-root {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+.body-root {
+  font-family: var(--fb);
+  background: var(--bg-page);
+  color: var(--tx-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+.img-reset {
+  max-width: 100%;
+  display: block;
+}
+
+.link-reset {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ── LAYOUT SHELL ── */
+.page-wrap {
+  padding-top: var(--nav-h);
+  min-height: 100vh;
+}
+
+/* ── CONTAINER ── */
+.wrap {
+  width: 100%;
+  max-width: var(--max-w);
+  margin-inline: auto;
+  padding-inline: clamp(20px, 4vw, 56px);
+}
+
+/* ── SECTION SPACING ── */
+.section {
+  padding: clamp(64px, 8vw, 100px) 0;
+}
+
+.section-sm {
+  padding: clamp(40px, 5vw, 64px) 0;
+}
+
+/* ── TYPOGRAPHY UTILITIES ── */
+.h-display {
+  font-family: var(--fd);
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 700;
+  line-height: 1.06;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: var(--tx-heading);
+}
+
+.lbl {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--teal);
+}
+
+.lbl-icon {
+  font-size: 7px;
+}
+
+.lbl-coral {
+  color: var(--coral);
+}
+
+.rule {
+  width: 40px;
+  height: 3px;
+  background: var(--teal);
+  border-radius: 2px;
+}
+
+.c-teal   { color: var(--teal); }
+.c-coral  { color: var(--coral); }
+.c-orange { color: var(--orange); }
+
+/* ── BUTTONS ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-family: var(--fb);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 12px 26px;
+  border-radius: var(--radius);
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-icon {
+  font-size: 11px;
+  transition: transform 0.2s;
+}
+
+.btn:hover .btn-icon {
+  transform: translateX(3px);
+}
+
+.btn-teal {
+  background: var(--teal);
+  color: #fff;
+}
+
+.btn-teal:hover {
+  background: var(--teal-dk);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(108, 190, 237, 0.3);
+}
+
+.btn-coral {
+  background: var(--coral);
+  color: #fff;
+}
+
+.btn-coral:hover {
+  background: #d02f3b;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(230, 57, 70, 0.3);
+}
+
+.btn-ghost-white {
+  background: transparent;
+  color: #fff;
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+}
+
+.btn-ghost-white:hover {
+  border-color: var(--teal);
+  color: var(--teal);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--tx-heading);
+  border: 1.5px solid var(--bd);
+}
+
+.btn-outline:hover {
+  border-color: var(--teal);
+  color: var(--teal);
+  transform: translateY(-2px);
+}
+
+.btn-outline-teal {
+  background: transparent;
+  color: var(--teal);
+  border: 1.5px solid var(--teal-line);
+}
+
+.btn-outline-teal:hover {
+  background: var(--teal-dim);
+  transform: translateY(-2px);
+}
+
+/* ── IMAGE PLACEHOLDER ── */
+.img-ph {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: var(--tx-muted);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: var(--bg-muted);
+  border: 1px dashed rgba(0, 0, 0, 0.12);
+  border-radius: var(--radius);
+}
+
+.img-ph-icon {
+  font-size: 22px;
+  color: rgba(108, 190, 237, 0.35);
+}
+
+/* ── SCROLL REVEAL ── */
+.rv {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.rv.in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── LOGO TEXT (shared between navbar & footer) ── */
+.logo-text-wrap {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.logo-name {
+  font-family: var(--fd);
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--tx-heading);
+}
+
+.logo-sub {
+  font-size: 9.5px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--tx-muted);
+}
+
+/* ── RESPONSIVE BASE ── */
+@media (max-width: 480px) {
+  .logo-sub {
+    display: none;
+  }
+}

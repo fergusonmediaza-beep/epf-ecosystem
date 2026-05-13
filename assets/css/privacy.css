@@ -1,0 +1,340 @@
+/* ============================================================
+   EPF ECOSYSTEM — PRIVACY POLICY PAGE STYLES
+   assets/css/privacy.css
+   ============================================================ */
+
+/* ── PAGE HERO ── */
+.page-hero {
+  position: relative;
+  background: var(--bg-dark);
+  padding: clamp(72px, 10vw, 120px) 0 clamp(56px, 7vw, 88px);
+  overflow: hidden;
+}
+
+.page-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    rgba(13, 22, 40, 0.98) 0%,
+    rgba(13, 22, 40, 0.82) 55%,
+    rgba(13, 22, 40, 0.60) 100%
+  );
+  z-index: 1;
+}
+
+.page-hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--teal), var(--coral) 50%, transparent);
+  z-index: 3;
+}
+
+.page-hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.page-hero-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.15;
+}
+
+.page-hero-inner {
+  position: relative;
+  z-index: 2;
+}
+
+.page-hero-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: rgba(108, 190, 237, 0.12);
+  border: 1px solid rgba(108, 190, 237, 0.3);
+  border-radius: 2px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 20px;
+}
+
+.page-hero-tag-dot {
+  font-size: 8px;
+}
+
+.page-hero-title {
+  font-family: var(--fd);
+  font-size: clamp(48px, 7vw, 96px);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.page-hero-title-accent {
+  color: var(--teal);
+  display: block;
+}
+
+.page-hero-desc {
+  font-size: 17px;
+  line-height: 1.72;
+  color: rgba(255, 255, 255, 0.65);
+  max-width: 600px;
+  font-weight: 300;
+}
+
+/* ── PRIVACY LAYOUT ── */
+.privacy-section {
+  background: var(--bg-page);
+}
+
+.privacy-wrapper {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: clamp(36px, 5vw, 72px);
+  align-items: start;
+}
+
+/* ── STICKY SIDE NAV ── */
+.privacy-nav {
+  position: sticky;
+  top: calc(var(--nav-h) + 24px);
+  background: var(--bg-white);
+  border: 1px solid var(--bd);
+  border-radius: var(--radius-lg);
+  padding: 28px 24px;
+  box-shadow: var(--sh-sm);
+}
+
+.privacy-nav-title {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 16px;
+}
+
+.privacy-nav-link {
+  display: block;
+  font-size: 13px;
+  color: var(--tx-muted);
+  text-decoration: none;
+  padding: 7px 0 7px 12px;
+  border-left: 2px solid transparent;
+  margin-bottom: 2px;
+  transition: color 0.2s, border-color 0.2s, padding-left 0.2s;
+  line-height: 1.4;
+}
+
+.privacy-nav-link:hover {
+  color: var(--teal);
+  border-left-color: var(--teal);
+  padding-left: 16px;
+}
+
+/* ── CONTENT AREA ── */
+.privacy-content {
+  max-width: 760px;
+}
+
+.privacy-meta {
+  font-size: 13px;
+  color: var(--tx-light);
+  margin-bottom: 48px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--bd);
+  line-height: 1.6;
+}
+
+/* ── PRIVACY BLOCK ── */
+.privacy-block {
+  margin-bottom: 52px;
+  scroll-margin-top: calc(var(--nav-h) + 28px);
+}
+
+.privacy-block-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+  font-family: var(--fd);
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--tx-heading);
+  line-height: 1.15;
+}
+
+.privacy-block-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--teal-dim);
+  border: 1px solid var(--teal-line);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--teal);
+  flex-shrink: 0;
+  font-family: var(--fb);
+  line-height: 1;
+}
+
+.privacy-block-text {
+  font-size: 15px;
+  color: var(--tx-body);
+  line-height: 1.8;
+  margin-bottom: 14px;
+}
+
+.privacy-block-text-link {
+  color: var(--teal);
+  text-decoration: underline;
+  text-decoration-color: var(--teal-line);
+  transition: opacity 0.15s;
+}
+
+.privacy-block-text-link:hover {
+  opacity: 0.75;
+}
+
+/* ── LIST ── */
+.privacy-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 12px 0 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.privacy-list-item {
+  font-size: 15px;
+  color: var(--tx-body);
+  padding: 6px 0 6px 22px;
+  position: relative;
+  line-height: 1.7;
+}
+
+.privacy-list-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--teal);
+  opacity: 0.55;
+}
+
+.privacy-list-item-strong {
+  font-weight: 600;
+  color: var(--tx-heading);
+}
+
+/* ── HIGHLIGHT BOX ── */
+.privacy-highlight {
+  background: var(--bg-dark);
+  border-radius: var(--radius-lg);
+  padding: 20px 24px;
+  margin: 20px 0;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.privacy-highlight-icon {
+  font-size: 16px;
+  color: var(--teal);
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.privacy-highlight-text {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.75;
+  margin: 0;
+}
+
+.privacy-highlight-strong {
+  color: var(--teal);
+  font-weight: 600;
+}
+
+/* ── CONTACT CARD ── */
+.privacy-contact-card {
+  background: var(--bg-white);
+  border: 1px solid var(--bd);
+  border-left: 4px solid var(--teal);
+  border-radius: var(--radius-lg);
+  padding: 24px 28px;
+  box-shadow: var(--sh-sm);
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.privacy-contact-card-text {
+  font-size: 14px;
+  color: var(--tx-body);
+  line-height: 1.6;
+}
+
+.privacy-contact-card-link {
+  color: var(--teal);
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.15s;
+}
+
+.privacy-contact-card-link:hover {
+  opacity: 0.75;
+}
+
+.privacy-update-note {
+  margin-top: 20px;
+  font-size: 13px;
+  color: var(--tx-muted);
+  line-height: 1.7;
+  padding: 14px 18px;
+  background: var(--bg-muted);
+  border: 1px solid var(--bd);
+  border-radius: var(--radius);
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .privacy-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .privacy-nav {
+    position: static;
+  }
+}
+
+@media (max-width: 640px) {
+  .privacy-block-heading {
+    font-size: 18px;
+  }
+}
