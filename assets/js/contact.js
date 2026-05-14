@@ -74,7 +74,7 @@ function initInquiryTabs() {
 
 /* ── CONTACT FORM ── */
 function initContactForm() {
-  emailjs.init('9FEuiw6awosAhcPRI');
+  emailjs.init('maP1Im3Tth0b-gdLk');
 
   var submitBtn   = document.getElementById('form-submit-btn');
   var btnText     = document.querySelector('.form-btn-text');
@@ -204,23 +204,30 @@ function initContactForm() {
     }
 
     var activeTab   = document.querySelector('.inquiry-tab.active');
-    var inquiryType = activeTab ? activeTab.dataset.type : 'general';
+    var inquiryRaw  = activeTab ? activeTab.dataset.type : 'general';
+    var inquiryLabels = {
+      partnership: 'Partnership',
+      investment:  'Investment',
+      solutions:   'Solutions Demo',
+      procurement: 'Procurement',
+      general:     'General'
+    };
+    var inquiryType = inquiryLabels[inquiryRaw] || 'General';
 
     var templateParams = {
-      from_name:    firstName + (lastName ? ' ' + lastName : ''),
-      first_name:   firstName,
-      last_name:    lastName,
-      reply_to:     email,
-      phone:        phone || 'Not provided',
-      organisation: organisation || 'Not provided',
-      role:         role || 'Not provided',
-      message:      message,
-      inquiry_type: inquiryType
+      first_name:    firstName,
+      last_name:     lastName,
+      email_address: email,
+      phone_number:  phone || 'Not provided',
+      organisation:  organisation || 'Not provided',
+      role:          role || 'Not provided',
+      message:       message,
+      enquiry_type:  inquiryType
     };
 
     setLoading(true);
 
-    emailjs.send('service_i5h4bqn', 'template_f0837zz', templateParams)
+    emailjs.send('service_3qc6jge', 'template_zhtvijo', templateParams)
       .then(function() {
         formInner.style.display = 'none';
         formSuccess.classList.add('show');
